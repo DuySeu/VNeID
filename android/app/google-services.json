@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1022002555346",
+    "project_id": "vneid-e50fe",
+    "storage_bucket": "vneid-e50fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022002555346:android:d73e44e59a1f6335d1800b",
+        "android_client_info": {
+          "package_name": "com.example.vneid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaJb07gj-LnUKU2XxjfglQQ1-eoiXiq0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
