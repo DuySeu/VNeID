@@ -25,7 +25,7 @@ class otherPaper extends StatelessWidget {
                 },
                 child: const Column(
                   children: [
-                    Icon(Icons.contact_page_outlined, size: 70),
+                    Icon(Icons.contact_page_outlined, size: 50),
                     Text("Thông tin cá nhân")
                   ],
                 ),
@@ -37,7 +37,7 @@ class otherPaper extends StatelessWidget {
                 },
                 child: const Column(
                   children: [
-                    Icon(Icons.assignment, size: 70),
+                    Icon(Icons.assignment, size: 50),
                     Text("Tài liệu")
                   ],
                 ),
@@ -46,7 +46,7 @@ class otherPaper extends StatelessWidget {
                 onPressed: () {},
                 child: const Column(
                   children: [
-                    Icon(Icons.present_to_all_outlined, size: 70),
+                    Icon(Icons.present_to_all_outlined, size: 50),
                     Text("Tích hợp giấy tờ")
                   ],
                 ),
