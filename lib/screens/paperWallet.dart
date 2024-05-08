@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:vneid/fake_data.dart';
 import 'package:vneid/widget/other_paper.dart';
 import 'package:vneid/widget/personal_info.dart';
@@ -59,10 +60,7 @@ class PaperWalletScreen extends StatelessWidget {
                   child: Center(
                     child: ElevatedButton.icon(
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => PersonalInfo()));
+                          Get.to(PersonalInfo());
                         },
                         icon: Icon(
                           Icons.person,
@@ -71,7 +69,7 @@ class PaperWalletScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 8.0),
-                otherPaper(),
+                OtherPaper(),
               ],
             ),
           )),

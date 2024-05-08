@@ -1,8 +1,9 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:vneid/fake_data.dart';
-import 'package:vneid/widget/view_info.dart';
+import 'package:vneid/widget/info/view_info.dart';
 
 class InfoList extends StatelessWidget {
   InfoList({super.key});
@@ -22,12 +23,7 @@ class InfoList extends StatelessWidget {
           final item = _info[index];
           return ListTile(
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => ViewInfo(
-                              info: item,
-                            )));
+                Get.to(() => ViewInfo(info: item));
               },
               title: Text(item["infoType"].toString()));
         },

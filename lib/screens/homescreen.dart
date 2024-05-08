@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:vneid/screens/paperWallet.dart';
 import 'package:vneid/widget/other_paper.dart';
@@ -29,14 +30,10 @@ class HomeScreen extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => PaperWalletScreen(),
-                      ));
+                  Get.to(() => PaperWalletScreen());
                 },
                 child: Text('Xem CCCD')),
-            otherPaper(),
+            OtherPaper(),
             SizedBox(height: 8.0),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:vneid/fake_data.dart';
-import 'package:vneid/widget/view-pdf.dart';
+import 'package:vneid/widget/documents/view-pdf.dart';
 
 class DocumentList extends StatelessWidget {
   DocumentList({super.key});
@@ -21,10 +22,7 @@ class DocumentList extends StatelessWidget {
             leading: const Icon(Icons.picture_as_pdf),
             title: Text(item["name"].toString()),
             onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => ViewPDF(doc: item)));
+              Get.to(() => ViewPDF(doc: item));
             },
             trailing: const Icon(Icons.open_in_new),
           );

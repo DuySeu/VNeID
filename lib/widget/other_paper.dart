@@ -1,11 +1,13 @@
 // ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:vneid/widget/document_list.dart';
-import 'package:vneid/widget/info_list.dart';
+import 'package:get/get.dart';
+import 'package:vneid/widget/documents/document_list.dart';
+import 'package:vneid/widget/info/info_list.dart';
+import 'package:vneid/widget/info_form.dart';
 
-class otherPaper extends StatelessWidget {
-  const otherPaper({super.key});
+class OtherPaper extends StatelessWidget {
+  const OtherPaper({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +22,7 @@ class otherPaper extends StatelessWidget {
             children: [
               TextButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => InfoList()));
+                  Get.to(() => InfoList());
                 },
                 child: const Column(
                   children: [
@@ -32,8 +33,7 @@ class otherPaper extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => DocumentList()));
+                  Get.to(() => DocumentList());
                 },
                 child: const Column(
                   children: [
@@ -43,7 +43,9 @@ class otherPaper extends StatelessWidget {
                 ),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => InfoForm());
+                },
                 child: const Column(
                   children: [
                     Icon(Icons.present_to_all_outlined, size: 50),

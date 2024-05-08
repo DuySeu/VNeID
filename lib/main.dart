@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_final_fields
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:vneid/screens/homescreen.dart';
 import 'package:vneid/screens/notification.dart';
 import 'package:vneid/screens/paperWallet.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: MaterialApp(
+      child: GetMaterialApp(
         home: MainNavBar(),
         debugShowCheckedModeBanner: false,
       ),
